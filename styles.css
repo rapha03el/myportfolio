@@ -1,0 +1,206 @@
+/*resetting base styles*/
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ body {
+    font-family: 'Poppins';
+    background-color: #f2f2f2;
+    color: black;
+ }
+
+ header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 60px;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+ }
+
+ .logo {
+    font-weight: 700;
+    font-size: 24px;
+ }
+
+ .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+ }
+
+ nav ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+ }
+
+ nav ul li a {
+    text-decoration: none;
+    color: rgb(184, 182, 182);
+    font-weight: 500;
+    transition: color 0.3s;
+ }
+
+ nav ul li a:hover {
+    color: #474747;
+ }
+
+ .contact-btn {
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background 0.3s;
+ }
+  .contact-btn:hover {
+    background-color: #26243a;
+    color: #e6e6e6;
+  }
+
+  /* Main paige */
+  main {
+    display: flex;
+    height: 100vh;
+  }
+
+  .left {
+    flex: 1;
+    background-color: #e6e6e6;
+    padding: 200px 80px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .intro {
+    font-size: 18px;
+    color: rgb(88, 88, 88);
+    margin-bottom: 10px;
+  }
+
+  .name {
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  .title {
+    font-size: 18px;
+    color: #888;
+    margin-bottom: 30px;
+  }
+
+
+  .socials a {
+    font-size: 20px;
+    margin-right: 20px;
+    color: #111;
+    transition: color 0.3s;
+  }
+
+  .socials a:hover {
+    color: gray;
+  }
+
+  .right {
+    flex: 1;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .profile-img {
+    max-width: 350px;
+    border-radius: 15px;
+  }
+
+  .hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: rgba(192, 214, 218, 0.644);
+  }
+
+  @media (max-width: 896px) and (max-width: 1024px) {
+
+  .hamburger {
+    display: block;
+  }
+
+  #menu {
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+    transition: all 0.4s ease-in-out;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  #menu.active {
+    max-height: 500px; /* adjust as needed */
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+}
+
+
+  @media (max-width: 896px) and (max-width: 1024px) {
+    main {
+        flex-direction: column;
+        height: auto;
+    }
+    .left,
+    .right {
+        flex: none;
+        width: 100%;
+        padding: 40px 30px;
+        text-align: center;
+    }
+
+    .profile-img {
+        max-width: 250px;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px 30px;
+    }
+
+    .nav-right {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        margin-top: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+    nav ul li a {
+        color: black;
+    }
+    .contact-btn {
+        align-self: stretch;
+        text-align: center;
+        width: 100%;
+    }
+  }
