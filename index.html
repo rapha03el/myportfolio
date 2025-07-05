@@ -12,9 +12,9 @@
 
 </head>
 <body>
-    
+    <section id="home">
     <header>
-        <div class="logo">RM</div>
+        <div class="logo"><a href="#home">RM</a></div>
 
         <div class="hamburger" id="hamburger">
             <i class="fas fa-bars"></i>
@@ -23,12 +23,12 @@
         <div class="nav-right" id="menu">
         <nav>
             <ul>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Portfolio</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects Gallery</a></li>
             </ul>
         </nav>
-        <a href="#" class="contact-btn">Contact Me</a>
+        <a href="#contact-sec" class="contact-btn">Say Hello</a>
         </div>
     </header>
 
@@ -36,11 +36,12 @@
         <section class="left">
             <p class="intro">Yello, I am</p>
             <h1 class="name">Raphael Matey</h1>
-            <p class="title">Front-end Developer / Tech Support / UI Designer</p>
+            <p class="title">Web Developer / Tech Support / Graphic Designer</p>
             <div class="socials">
-                <a href="#"><i class="fas fa-envelope"></i></a>
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" aria-label="Send Email"><i class="fas fa-envelope"></i></a>
+                <a href="#" aria-label="Github Profile"><i class="fab fa-github"></i></a>
+                <a href="#" aria-label="LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" aria-label="Call Me"><i class="fas fa-phone-alt"></i></a>
             </div>
 
         </section>
@@ -49,6 +50,108 @@
             <img src="moi.jpg" alt="Profile Photo" class="profile-img">
         </section>
     </main>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I'm Raphael Matey, a passionate web and graphic Designer with a love for crafting responsive, user focused websites
+                and interfaces. I'm also experienced in technical support, which helps me understand and solve real-world user problems.
+                I always look forward to contributing to exciting projects.
+            </p>
+            <p>
+                My tools of choice include HTML, CSS, Javascript, and frameworks like React. I'm always learning and pushing my expertise 
+                to anotherlevel.
+            </p>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill">
+                    <i class="fab fa-html5"></i>
+                    <p>HTML5</p>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-css3-alt"></i>
+                    <p>CSS3</p>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-js-square"></i>
+                    <p>Javascript</p>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-react"></i>
+                    <p>React (Learning)</p>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-tools"></i>
+                    <p>Tech Support</p>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-pencil-ruler"></i>
+                    <p>Graphic Design</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="projects-grid">
+                <a href="" target="_blank" class="project-card">
+                    <h3>Weather App</h3>
+                    <p>A simple weather forecasting app using API.</p>
+                </a>
+
+                <a href="" target="_blank" class="project-card">
+                    <h3>Calculator App</h3>
+                    <p>A simple calculator app with an extra feature</p>
+                </a>
+
+                <a href="" target="_blank" class="project-card">
+                    <h3>Portfolio Website</h3>
+                    <p>This very website you're looking at!</p>
+                </a>
+
+                <a href="" target="_blank" class="project-card">
+                    <h3>Employee Management System</h3>
+                    <p>A user-friendly system to optimize workforce management efficiently.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact-sec">
+        <div class="container">
+            <h2>Say Hello!</h2>
+            <p>You can reach out to me through any of these platforms:</p>
+            <div class="contact-icons">
+                <a href="mailto:mateyraphael3@gmail.com" target="_blank" aria-label="contact" rel="noopener noreferrer"><i class="fas fa-envelope"></i></a>
+                <a href="https://github.com/rapha03el" target="_blank" rel="noopener noreferrer" aria-label="contact"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/raphael-matey-b39765268?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" aria-label="contact" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                <a href="tel:+233556276919" aria-label="contact"><i class="fas fa-phone-alt"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">RM</div>
+
+            <ul class="footer-nav">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <p class="footer-copy">© 2025 Raphael Matey. All rights reserved.</p>
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
