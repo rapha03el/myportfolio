@@ -35,7 +35,7 @@ box-shadow: 0 2px 10px rgba(0, 0, 0, 0.09);
  }
  .logo a {
     text-decoration: none;
-    color: rgb(79, 167, 194);
+    color: rgb(131, 128, 128);
  }
 .logo:hover {
     transform: scale(1.2);
@@ -372,7 +372,7 @@ margin: 0 auto;
   color: rgb(99, 199, 212);
 }
 .footer-nav {
-  list-style: square;
+  list-style: none;
   display: flex;
   justify-content: center;
   gap: 70px;
