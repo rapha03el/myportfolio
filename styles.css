@@ -241,7 +241,7 @@ box-shadow: 0 2px 10px rgba(0, 0, 0, 0.09);
     font-size: 16px;
     line-height: 2.5;
     margin-bottom: 20px;
-    color: #555;
+    color: #000000;
   }
 
   .skills {
@@ -285,6 +285,29 @@ box-shadow: 0 2px 10px rgba(0, 0, 0, 0.09);
   color: #745a29;
   cursor: grab;
 }
+
+.skill i.fa-html5 {
+  color: #ec8a39; 
+}
+
+.skill i.fa-php {
+  color: #777BB3; 
+}
+
+.skill i.fa-css3-alt {
+  color: #cfdf3f; 
+}
+
+.skill i.fa-pencil-ruler {
+  color: #299129; 
+}
+
+.skill i.fa-tools {
+  color: #343a97; 
+}
+
+
+
 
 .section {
   padding-top: 100px;
